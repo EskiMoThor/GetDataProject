@@ -17,6 +17,7 @@ run_analysis() cleans and transforms the UCI HAR Dataset and outputs a data fram
 It takes one argument, dataFolder, of a folder path. 
 The dataFolder argument is the path for the extracted contents of the UCI HAR Dataset.
 If the function is used without an argument it defaults to using the current working directory.
+A detailed description of the output can be found in the Codebook file.
 
 tidy_means() creates a second tidy data set from the first.
 The output is a data frame, which is also saved as CSV file, "tidy_means.csv", in the current working directory.
