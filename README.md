@@ -26,6 +26,11 @@ The data frame passed to tidy_means should be the output from run_analysis().
 To use the functions source the script file: source('[path to file]/run_analysis.R')
 Then assign the output of run_analysis to a variable.
 Then call tidymeans with that variable as the argument. Optionally assign it to another variable.
+
 Example with the working directory set to the "UCI HAR Dataset" folder:
+
+  source('run_analysis.R')
+  
   x <- run_analysis()
-  y <- tidy_means(y)
+
+  y <- tidy_means(x)
