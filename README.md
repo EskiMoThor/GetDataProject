@@ -13,17 +13,20 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 In the run_analysis.R script there are two functions: run_analysis() and tidy_means()
 
-run_analysis() cleans and transforms the UCI HAR Dataset and outputs a data frame.
+# run_analysis() 
+This function does the initial cleaning and tidying up of the UCI HAR Dataset, and returns the result as a data frame.
 It takes one argument, dataFolder, of a folder path. 
 The dataFolder argument is the path for the extracted contents of the UCI HAR Dataset.
 If the function is used without an argument it defaults to using the current working directory.
 A detailed description of the output can be found in the Codebook file.
 
-tidy_means() creates a second tidy data set from the first.
-The output is a data frame, which is also saved as CSV file, "tidy_means.csv", in the current working directory.
+# tidy_means() 
+This function creates a second tidy data set from the first.
+The output is a data frame, that is also saved as CSV file, "tidy_means.csv", in the current working directory.
 tidy_means takes one argument, x_Data_Set, of a data frame.
 The data frame passed to tidy_means should be the output from run_analysis().
 
+# Usage
 To use the functions source the script file: source('[path to file]/run_analysis.R')
 Then assign the output of run_analysis to a variable.
 Then call tidymeans with that variable as the argument. Optionally assign it to another variable.
