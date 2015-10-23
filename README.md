@@ -16,16 +16,23 @@ In the run_analysis.R script there are two functions: run_analysis() and tidy_me
 
 ## run_analysis() 
 This function does the initial cleaning and tidying up of the UCI HAR Dataset, and returns the result as a data frame.
+
 It takes one argument, dataFolder, of a folder path. 
+
 The dataFolder argument is the path for the extracted contents of the UCI HAR Dataset.
+
 If the function is used without an argument it defaults to using the current working directory.
+
 A detailed description of the output can be found in the Codebook file.
 
 
 ## tidy_means() 
 This function creates a second tidy data set from the first.
+
 The output is a data frame, that is also saved as CSV file, "tidy_means.csv", in the current working directory.
+
 tidy_means takes one argument, x_Data_Set, of a data frame.
+
 The data frame passed to tidy_means should be the output from run_analysis().
 
 
