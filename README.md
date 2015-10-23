@@ -33,16 +33,16 @@ Then call tidymeans with that variable as the argument. Optionally assign it to 
 
 Example with the working directory set to the "UCI HAR Dataset" folder:
 
-  source('run_analysis.R')
+    source('run_analysis.R')
   
-  x <- run_analysis()
+    x <- run_analysis()
 
-  y <- tidy_means(x)
+    y <- tidy_means(x)
 
 To view the contents of the saved data file, "tidy_means.csv" in R Studio:
   
-  z <- read.csv("tidy_means.csv", header = TRUE)
+    z <- read.csv("tidy_means.csv", header = TRUE)
   
-  view(z)
+    view(z)
   
   Alternatively the file can be viewed in Excel or any application capable of rendering csv files.
