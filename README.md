@@ -23,7 +23,7 @@ The dataFolder argument is the path for the extracted contents of the UCI HAR Da
 
 If the function is used without an argument it defaults to using the current working directory.
 
-A detailed description of the output can be found in the Codebook file.
+A detailed description of the output can be found in the CodeBook file.
 
 
 ## tidy_means() 
@@ -52,10 +52,10 @@ Example:
     y <- tidy_means(y)
 
 
-To view the contents of the saved data file, "tidy_means.csv" in R Studio:
+To view the contents of the saved data file, "tidy_data.txt" in R Studio:
   
-    z <- read.csv("tidy_means.csv", header = TRUE)
+    z <- read.table("tidy_means.csv", header = TRUE)
   
     view(z)
   
-Alternatively the file can be viewed in Excel or any application capable of rendering csv files.
+Alternatively the raw file contents can be viewed in any text editor.
