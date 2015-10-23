@@ -38,3 +38,11 @@ Example with the working directory set to the "UCI HAR Dataset" folder:
   x <- run_analysis()
 
   y <- tidy_means(x)
+
+To view the contents of the saved data file, "tidy_means.csv" in R Studio:
+  
+  z <- read.csv("tidy_means.csv", header = TRUE)
+  
+  view(z)
+  
+  Alternatively the file can be viewed in Excel or any application capable of rendering csv files.
