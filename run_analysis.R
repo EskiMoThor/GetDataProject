@@ -82,7 +82,7 @@ tidy_means <- function(x_Data_Set){
   data_cast <- arrange(data_cast, Subject, Activity)
   
   ## Save the data set to a file.
-  write.csv(data_cast, file = "tidy_means.csv", row.names = FALSE)
+  write.table(data_cast, file = "tidy_data.txt", row.names = FALSE)
   
   ## Return the tidy data.
   data_cast
@@ -96,5 +96,5 @@ if(dir.exists(file.path("test")) && dir.exists( file.path("train"))){
   message("Analysis completed.")
   message("Output of run_analysis assigned to r_a")
   message("Output of tidy_means assigned to tidy_data")
-  message("Output of tidy_means saved to file: tidy_means.csv")
+  message("Output of tidy_means saved to file: tidy_data.txt")
 }
