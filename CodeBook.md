@@ -128,6 +128,6 @@ Then we use dcast() to turn each unique variable into a column, and for each uni
 
 The data is then sorted by Subject and then by Activity.
 
-Next the final result is saved as "tidy_means.csv".
+Next the final result is saved as "tidy_data.txt".
 
 Finally the result is returned.
