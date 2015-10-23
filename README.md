@@ -37,7 +37,7 @@ The data frame passed to tidy_means should be the output from run_analysis().
 
 
 ## Usage
-The simplest way to use the script is to set your working directory to the UCI HAR dataset folder (download link below).
+The simplest way to use the script is to set your working directory to the UCI HAR dataset folder (download link above).
 Then source/run the script.
 
 
